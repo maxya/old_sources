@@ -1,0 +1,252 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 311, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Database Tool"
+MENU IDC_LAB42
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "EXIT",IDOK,254,7,50,14
+    PUSHBUTTON      "Add Data into Database",IDC_NEW,28,19,190,21
+    PUSHBUTTON      "Wiev Data",IDC_VIEW,27,49,190,21
+    RTEXT           "Static",IDC_VERSION,142,131,162,11
+END
+
+IDD_NEW DIALOGEX 0, 0, 313, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,256,24,50,14
+    EDITTEXT        IDC_NEW_AUTHOR,119,22,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_NAME,119,38,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_NUM,119,55,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_INDEX,119,72,121,16,ES_AUTOHSCROLL
+    LTEXT           "Author",IDC_STATIC,7,25,94,13
+    LTEXT           "Book Name",IDC_STATIC,7,42,94,13
+    LTEXT           "Book Number",IDC_STATIC,7,59,94,13
+    LTEXT           "Book Index",IDC_STATIC,7,75,94,13
+END
+
+IDD_VIEW DIALOGEX 0, 0, 313, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "View Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "<= back",IDOK,256,7,50,14
+    EDITTEXT        IDC_VIEW_AUTHOR,119,22,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIEW_NAME,119,38,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIEW_NUM,119,55,121,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIEW_INDEX,119,72,121,16,ES_AUTOHSCROLL
+    LTEXT           "Author",IDC_STATIC,7,25,94,13
+    LTEXT           "Book Name",IDC_STATIC,7,42,94,13
+    LTEXT           "Book Number",IDC_STATIC,7,59,94,13
+    LTEXT           "Book Index",IDC_STATIC,7,75,94,13
+    PUSHBUTTON      "Previous",IDC_PREV,58,93,61,19
+    PUSHBUTTON      "Next",IDC_NEXT,126,93,61,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        VERTGUIDE, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+        HORZGUIDE, 21
+        HORZGUIDE, 38
+        HORZGUIDE, 55
+        HORZGUIDE, 72
+        HORZGUIDE, 88
+    END
+
+    IDD_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        VERTGUIDE, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+        HORZGUIDE, 21
+        HORZGUIDE, 38
+        HORZGUIDE, 55
+        HORZGUIDE, 72
+        HORZGUIDE, 88
+        HORZGUIDE, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    LTEXT           "Database Programm v 1.00",IDC_STATIC,7,7,111,12
+    LTEXT           "Made by Maximus 2002",IDC_STATIC,7,25,172,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LAB42               ICON                    "Lab 4.2.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_LAB42 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Sort Data",                   133
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_HELP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KSniff", "KSniff.vcproj", "{73F4D6B1-69AC-4B81-899C-062908655ACE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnifDll", "..\SnifDll\SnifDll.vcproj", "{6D8DF38B-EE65-4AC4-894B-AD4276D8BF9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{73F4D6B1-69AC-4B81-899C-062908655ACE}.Debug.ActiveCfg = Debug|Win32
+		{73F4D6B1-69AC-4B81-899C-062908655ACE}.Debug.Build.0 = Debug|Win32
+		{73F4D6B1-69AC-4B81-899C-062908655ACE}.Release.ActiveCfg = Release|Win32
+		{73F4D6B1-69AC-4B81-899C-062908655ACE}.Release.Build.0 = Release|Win32
+		{6D8DF38B-EE65-4AC4-894B-AD4276D8BF9E}.Debug.ActiveCfg = Debug|Win32
+		{6D8DF38B-EE65-4AC4-894B-AD4276D8BF9E}.Debug.Build.0 = Debug|Win32
+		{6D8DF38B-EE65-4AC4-894B-AD4276D8BF9E}.Release.ActiveCfg = Release|Win32
+		{6D8DF38B-EE65-4AC4-894B-AD4276D8BF9E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

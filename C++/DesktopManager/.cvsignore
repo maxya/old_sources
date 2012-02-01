@@ -1,0 +1,18 @@
+!
+RCS     SCCS    CVS     CVS.adm
+RCSLOG  cvslog.*
+tags    TAGS
+
+mssccprj.scc vssver.scc *.vsscc *.vspscc *.vssscc
+
+.make.state     .nse_depinfo
+*~      #*      .#*     ,*      _$*     *$
+*.old   *.bak   *.BAK   *.orig  *.rej   .del-*
+*.a     *.olb   *.o     *.obj   .*.swp
+*.Z     *.elc   *.ln
+core	*.core
+
+*.ncb	*.aps	*.opt	*.plg
+
+*[Dd]ebug *[Rr]elease [Tt]humbs.* .xvpics
+
