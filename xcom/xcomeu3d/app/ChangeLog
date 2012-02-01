@@ -1,0 +1,11 @@
+2003-07-27 Kolomiyets Yaroslav <yarik@vershynin.com>
+	* xcomeu3d.proj
+	Windows console enabled for debugging purposes
+        
+	* xcomeu3d.cfg
+	minor adaptions
+
+	* src/application.[cpp|h], main.cpp
+	started basic customizations & adaptations
+
+	Projects imported from neoframworks/neoapplications

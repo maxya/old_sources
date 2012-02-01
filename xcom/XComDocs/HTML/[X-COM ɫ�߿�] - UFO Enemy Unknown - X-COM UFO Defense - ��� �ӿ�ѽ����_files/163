@@ -1,0 +1,251 @@
+// <script language="javascript">
+on=mw=null;
+fl=ofl=0;
+mc=me=0;
+t=0;
+b=0;
+ch=bt=bn=0;
+wn=wt=null;
+sl=0;
+t2=0;
+function Is533E4088()
+{
+ this.n=(document.layers)?true:false;
+ this.o=(navigator.userAgent.indexOf('Opera')!=-1)?true:false;
+ this.i=(document.all&&(!this.o))?true:false;
+ this.d=(document.getElementById)?true:false;
+}
+var is533E4088=new Is533E4088();
+function Stor()
+{
+ if(is533E4088.n&&(top.frames.length>0)){
+  return top.frames[0];
+ }
+ else{
+  if (document.location.search.substring(0,6)=="?Time=") return self;
+  return top;
+ }
+}
+var st=Stor();
+if(isNaN(st.sl)) st.sl=1; else st.sl++;
+function ge533E4088()
+{
+ var cl;
+ if(is533E4088.n){
+  cl=document.layers[ge533E4088.arguments[0]];
+  for(var i=1;i<ge533E4088.arguments.length&&cl;i++) {
+   cl=cl.document.layers[ge533E4088.arguments[i]];
+  }
+  return cl;
+ } else if(is533E4088.i) {
+  cl=eval('document.all.'+ge533E4088.arguments[ge533E4088.arguments.length-1]);
+  return cl;
+ } else {
+  var n=ge533E4088.arguments[ge533E4088.arguments.length-1];
+  cl=document.getElementById(n);
+  if(cl) return cl;
+  cl=document.getElementsByName(n);
+  if(cl) return cl[0];
+ }
+}
+function sbv533E4088(v)
+{
+ if(is533E4088.n) st.b.visibility=v;
+ else if(st.b.style) st.b.style.visibility=v;
+}
+function met533E4088(e,x,y)
+{
+ if(is533E4088.n) e.moveTo(x,y);
+ else if(is533E4088.i) {
+  e.style.pixelLeft=x;
+  e.style.pixelTop=y;
+ } else {
+  e.style.left=x;
+  e.style.top=y;
+ }
+}
+function gbw533E4088(e)
+{
+ if(is533E4088.n) return e.document.width;
+ else return e.offsetWidth;
+}
+function gbo533E4088(e)
+{
+ var y;
+ if(is533E4088.n) return e.pageY;
+ else {
+  y = 0;
+  while (e.offsetParent != null) {
+   y += e.offsetTop;
+   e = e.offsetParent;
+  }
+  y += e.offsetTop;
+  return y;
+ }
+}
+function gww533E4088()
+{
+ if(window.innerWidth) return window.innerWidth;
+ else return document.body.clientWidth;
+}
+function gwh533E4088()
+{
+ if(window.innerHeight) return window.innerHeight;
+ else return document.body.clientWidth;
+}
+function rbu533E4088()
+{
+ if(st.b==st.bn){ 
+  sbv533E4088('hidden');
+  st.b=st.bt; 
+  sbv533E4088('visible');
+ }
+ clearTimeout(st.t);
+}
+function rbd533E4088()
+{
+ if(st.b==st.bt){
+  sbv533E4088('hidden');
+  st.b=st.bn;
+  sbv533E4088('visible');
+ }
+ clearTimeout(st.t);
+}
+function clb533E4088()
+{
+ clearTimeout(st.t);
+ sbv533E4088('hidden');
+}
+function gn533E4088(n,c) {
+if (is533E4088.n) {
+document.write('<layer id="'+n+'" left=0 top=0 visibility=hide z-index=999>')
+} else {
+document.write('<div style="position: absolute; left: 0; top: 0;'+(is533E4088.i?" width: 1;":"")+' visibility: hidden; z-index: 999;" id="'+n+'">');
+}
+document.write('<table cellpadding=1 cellspacing=0 border=0 width="108"><tr><td bgcolor=000000><table cellpadding=0 cellspacing=0 border=0 width=100%><tr bgcolor=ffffff><td height=1 nowrap><spacer type=block width=1 height=1></td></tr><tr><td><table cellpadding=0 cellspacing=0 border=0 width="100%"><tr bgcolor=cccccc><td width=1 nowrap bgcolor=ffffff><spacer type=block width=1 height=1></td><td width=18><a href="http://www.yandex.ru/" target=_blank><img src="http://bs.yandex.ru/resource/by.gif" title="Яндекс" alt="Яндекс" width=18 height=14 border=0 vspace=2 hspace=1></a></td><td width="98%"><a href="http://www.yandex.ru/advertising/index.html" target=_blank><img src="http://bs.yandex.ru/resource/bt.gif" title="Реклама на Яндексе" alt="Реклама на Яндексе" width=51 height=14 border=0 align=middle></a></td><td width=11><a href="http://narod.yandex.ru/help/mini.yhtml" target=_blank><img src="http://bs.yandex.ru/resource/bh.gif" title="Помощь" alt="Помощь" width=11 height=10 border=0></a></td><td width=11>');
+if (n=='bn') {
+document.write('<a href="#" onclick="rbu533E4088(); return false;"><img src="http://bs.yandex.ru/resource/bu.gif" title="Спрятать" alt="Спрятать" width=11 height=10 border=0></a>');
+} else {
+document.write('<a href="#" onclick="rbd533E4088(); return false;"><img src="http://bs.yandex.ru/resource/bd.gif" title="Показать" alt="Показать" width=11 height=10 border=0></a></td><td width=11><a href="#" onclick="clb533E4088();return false;"><img src="http://bs.yandex.ru/resource/bc.gif" title="Закрыть" alt="Закрыть" width=11 height=10 border=0></a>');
+}
+document.write('</td><td width=1 nowrap bgcolor=808080><spacer type=block width=1 height=1></td></tr></table></td></tr><tr><td><table cellpadding=0 cellspacing=0 border=0 width="100%"><tr bgcolor=cccccc><td width=3><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td><td width="100%" bgcolor=808080><spacer type=block width=1 height=1></td><td width=3><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td></tr><tr bgcolor=cccccc><td width=3 background="http://bs.yandex.ru/resource/bb.gif"><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td><td width="100%">'+c+'</td><td width=3 background="http://bs.yandex.ru/resource/bb.gif"><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td></tr><tr><td width=3 background="http://bs.yandex.ru/resource/bb.gif"><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td><td height=1 bgcolor=ffffff><spacer type=block width=1 height=1></td><td width=3 background="http://bs.yandex.ru/resource/bb.gif"><img src="http://bs.yandex.ru/resource/bb.gif" width=3 height=1></td></tr></table></td></tr><tr bgcolor=cccccc><td height=1 nowrap><table cellpadding=0 cellspacing=0 border=0 width=1 align=left><td height=1 nowrap bgcolor=ffffff><spacer type=block width=1 height=1></td></table><table cellpadding=0 cellspacing=0 border=0 width=1 align=right><td height=1 nowrap bgcolor=808080><spacer type=block width=1 height=1></td></table></td></tr><tr bgcolor=808080><td height=1 nowrap><spacer type=block width=1 height=1></td></tr></table></td></tr></table>');
+if (is533E4088.n) document.writeln('</layer>');
+else document.writeln('</div>');
+}
+function mvb533E4088()
+{
+ var obn=0;
+ var obt=0;
+ if(bn==0) bn=ge533E4088('bn');
+ if(bt==0) bt=ge533E4088('bt');
+ if(ch==0) ch=ge533E4088('ch');
+ if(!wn) wn=gbw533E4088(bn);
+ if(!wt) wt=gbw533E4088(bt);
+ w=gww533E4088();
+ h=gwh533E4088();
+ o=gbo533E4088(ch);
+ obn=w-wn;
+ obt=w-wt;
+ if((!is533E4088.i) && h<o) {
+  obn -= 15;
+  obt -= 15;
+ }
+ met533E4088(bn,obn,0);
+ met533E4088(bt,obt,0);
+}
+function shb533E4088()
+{
+ if((self!=st.mw)&&(top.frames.length>0)) return;
+ mvb533E4088();
+ st.bt = bt; st.b = st.bn = bn;
+ sbv533E4088('visible');
+ st.t=setTimeout('rbu533E4088()',30000);
+ if(on) {
+  sv=st;
+  on();
+  st=sv;
+ }
+}
+function isl533E4088()
+{
+ if(st.sl==0) {
+  if(st.mw==self) {
+   if(st.b) sbv533E4088('hidden');
+   shb533E4088();
+  }
+  clearTimeout(t2);
+ } else {
+  ofl=st.fl;
+  t2=self.setTimeout('self.isl533E4088()',100);
+ }
+}
+function net533E4088(s) {
+ if(s>st.mc){
+  st.mc=s;
+  st.mw=self;
+  isl533E4088();
+ }
+}
+function rbf533E4088()
+{
+ if (wc != window.innerWidth || hc != window.innerHeight) document.location.reload();
+}
+fn = frames.length;
+if(fn>0){
+ e=document.getElementsByTagName('iframe');
+ if(is533E4088.d) fn-=e.length;
+}
+if(fn==0) {
+ if (is533E4088.n) {
+  document.write('<layer id="ch" left=0 visibility=hide><spacer type=block width=1 height=1></layer>');
+ }
+ else {
+  document.write('<div style="position: absolute; left: 0; visibility: hidden;" id="ch"><spacer type=block width=1 height=1></div>');
+ }
+ gn533E4088('bn', '<a href="http://bs.yandex.ru/count/533E4088/163/19460/00000000/24920/79016" target=_blank title="Директ - объявления в вашем городе"><img src="http://bs.yandex.ru/count/533E4088/163/19460/00000000/24920/79017" alt="Директ - объявления в вашем городе" width="100" height="100" border="0"></a>');
+ gn533E4088('bt', '<a href="http://bs.yandex.ru/count/533E4088/163/19460/00000000/24920/79016" target=_blank><font size=-2 color="#000000">Директ - объявления в вашем городе</font></a>');
+ if(is533E4088.n) {
+  wc=window.innerWidth;
+  hc=window.innerHeight;
+  window.onResize=rbf533E4088;
+ }
+ else if(is533E4088.i) {
+  window.onresize=mvb533E4088;
+ }
+ else {
+  addEventListener("resize",mvb533E4088,false);
+ }
+ if(is533E4088.i) {
+  if(st.fl==null) {
+   st.fl=0;
+   st.mw=null;
+   st.mc=0;
+  }
+ } else {
+  if(isNaN(st.fl)) {
+   st.fl=0;
+   st.mw=null;
+   st.mc=0;
+  }
+ }
+ if(top.frames.length>0) {
+  me=st.fl++;
+  x=gww533E4088();
+  y=gwh533E4088();
+  s=x*y;
+  if(x>120&&y>120&&s>st.mc) {
+   if(st.mc==0) setTimeout('self.net533E4088('+s+')',x/10);
+   else {
+    st.mc=s;
+    st.mw=self;
+    isl533E4088();
+   }
+  }
+  st.sl--;
+ }
+ else {
+  if(window.onload) on=window.onload;
+  window.onload=shb533E4088;
+ }
+}
+// </script>

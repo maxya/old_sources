@@ -1,0 +1,13 @@
+#!/bin/sh
+aclocal
+autoheader
+if [ "`uname`" = "Darwin" ]; then
+	glibtoolize --force --copy
+else
+	libtoolize --force --copy
+fi
+
+# Add all makefiles that can't be automatically detected from configure.ac
+automake --foreign --include-deps --add-missing
+autoconf
+rm -f config.cache

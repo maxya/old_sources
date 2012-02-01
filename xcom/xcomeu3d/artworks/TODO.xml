@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="../wrap/TODO.xsl"?>
+<todo-list img-path="../wrap">
+<summary>
+  <title>artworks</title>
+</summary>
+
+<category name="динамическая геометрия" desc="">
+  <todo priority='1.0' class='model' progress='1'>примитивная модель хьюмена (X-COM)</todo>
+  <todo priority='0.6' class='texture'>текстурирование хьюмена</todo>
+  <todo priority='0.4' class='anim'>анимация хьюмена</todo>
+
+  <todo priority='0.4' class='model'>примитивная модель элиена</todo>
+  <todo priority='0.2' class='texture'>текстурирование элиена</todo>
+
+  <todo priority='0.20' class='model' progress='0.85'>простое оружие</todo>
+  <todo priority='0.05' class='texture'>текстурирование простого оружия</todo>
+</category>
+
+<category name="статическая геометрия">
+  <todo priority='0.8' class='model texture' progress='.08'>дерево</todo>
+  <todo priority='0.6' class='model texture'>куст</todo>
+  <todo priority='0.05' class='model texture'>пальма</todo>
+  <todo priority='0.81' class='model texture' progress='.0'>домик</todo>
+</category>
+
+<!-- информация ниже нужна для красивого отображения этого файла -->
+<priority-values>
+  <priority name="в последнюю очередь"	style="color: #000000"/>
+  <priority name="очень низкий"		style="color: #003F00"/>
+  <priority name="низкий" 		style="color: #005F00"/>
+  <priority name="ниже среднего"	style="color: #00AF00"/>
+  <priority name="средний" 		style="color: #00CF00"/>
+  <priority name="выше среднего" 	style="color: #AF5F00"/>
+  <priority name="высокий" 		style="color: #BF0000"/>
+  <priority name="очень высокий" 	style="color: #DF0000"/>
+  <priority name="в первую очередь" 	style="color: #FF0000"/>
+</priority-values>
+<class-list>
+  <class name="model" desc="моделлирование" img="mod2-8.png" />
+  <class name="texture" desc="текстурирование" img="tex1-8.png" />
+  <class name="anim" desc="анимация" img="ani1-8.png" />
+</class-list>
+</todo-list>
