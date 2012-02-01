@@ -1,0 +1,3 @@
+; TheLibrary support
+CUniversalText = s=<m_szText,s> su=<m_szwText,su>
+CswMap<*> = count=<m_uCount>

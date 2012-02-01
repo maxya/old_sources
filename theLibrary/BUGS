@@ -1,0 +1,8 @@
+i18n() should add mapping even for untranslated strings and return reference to that mapping.
+This should allow constructs like
+	LPSTR szFire = i18n("Fire");
+Now this is invalid because pointer reference returned is reference to temporary object, so
+such constructs should be
+	UTEXT utFire = i18n("Fire");
+	LPSTR szFire = utFire;
+Note that szFire remains valid as long as utFire does.

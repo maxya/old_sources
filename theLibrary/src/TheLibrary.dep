@@ -1,0 +1,122 @@
+# Microsoft Developer Studio Generated Dependency File, included by TheLibrary.mak
+
+.\Compress.cpp : \
+	"..\..\..\..\devel\mspsdk\include\shtypes.h"\
+	"..\Include\Compress.h"\
+	"..\Include\File.h"\
+	"..\Include\Macros.h"\
+	"..\Include\SWCommandLine.h"\
+	"..\Include\swDirectory.h"\
+	"..\Include\SWLists.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\swNotify.h"\
+	"..\Include\SWPtrArray.h"\
+	"..\Include\swStreamOnFile.h"\
+	"..\Include\swStreamOnHeap.h"\
+	"..\Include\TheLibrary.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\File.cpp : \
+	"..\..\..\..\devel\mspsdk\include\shtypes.h"\
+	"..\Include\Compress.h"\
+	"..\Include\File.h"\
+	"..\Include\Macros.h"\
+	"..\Include\SWCommandLine.h"\
+	"..\Include\swDirectory.h"\
+	"..\Include\SWLists.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\swNotify.h"\
+	"..\Include\SWPtrArray.h"\
+	"..\Include\swStreamOnFile.h"\
+	"..\Include\swStreamOnHeap.h"\
+	"..\Include\TheLibrary.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\devel\mspsdk\include\basetsd.h"\
+	"..\..\..\..\devel\mspsdk\include\guiddef.h"\
+	"..\..\..\..\devel\mspsdk\include\propidl.h"\
+	"..\..\..\..\devel\mspsdk\include\reason.h"\
+	"..\..\..\..\devel\mspsdk\include\stralign.h"\
+	"..\..\..\..\devel\mspsdk\include\tvout.h"\
+	".\StdAfx.h"\
+	
+
+.\SWCommandLine.cpp : \
+	"..\Include\SWCommandLine.h"\
+	"..\Include\SWLists.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\swDirectory.cpp : \
+	"..\..\..\..\devel\mspsdk\include\shtypes.h"\
+	"..\Include\File.h"\
+	"..\Include\Macros.h"\
+	"..\Include\swDirectory.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\swINIworks.cpp : \
+	"..\..\..\..\devel\mspsdk\include\shtypes.h"\
+	"..\Include\Compress.h"\
+	"..\Include\File.h"\
+	"..\Include\Macros.h"\
+	"..\Include\SWCommandLine.h"\
+	"..\Include\swDirectory.h"\
+	"..\include\swINIworks.h"\
+	"..\Include\SWLists.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\swNotify.h"\
+	"..\Include\SWPtrArray.h"\
+	"..\Include\swStreamOnFile.h"\
+	"..\Include\swStreamOnHeap.h"\
+	"..\Include\TheLibrary.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\SWPtrArray.cpp : \
+	"..\Include\File.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\SWPtrArray.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\swStreamOnFile.cpp : \
+	"..\Include\Macros.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\swStreamOnFile.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\swStreamOnHeap.cpp : \
+	"..\Include\SWMap.h"\
+	"..\Include\swStreamOnHeap.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\TheLibrary.cpp : \
+	"..\..\..\..\devel\mspsdk\include\shtypes.h"\
+	"..\Include\Compress.h"\
+	"..\Include\File.h"\
+	"..\Include\Macros.h"\
+	"..\Include\SWCommandLine.h"\
+	"..\Include\swDirectory.h"\
+	"..\Include\SWLists.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\swNotify.h"\
+	"..\Include\SWPtrArray.h"\
+	"..\Include\swStreamOnFile.h"\
+	"..\Include\swStreamOnHeap.h"\
+	"..\Include\TheLibrary.h"\
+	"..\Include\UniversalText.h"\
+	
+
+.\UniversalText.cpp : \
+	"..\Include\File.h"\
+	"..\Include\SWMap.h"\
+	"..\Include\UniversalText.h"\
+	

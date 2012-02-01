@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TheLibrary - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSP11B.tmp" with contents
+[
+/nologo /ML /W3 /GX /Ox /Og /Os /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/TheLibrary.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\usr\src\Win32\TheLibrary\Src\Compress.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\File.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\SWCommandLine.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swDirectory.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swINIworks.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\SWPtrArray.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swStreamOnFile.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swStreamOnHeap.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\TheLibrary.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\UniversalText.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSP11B.tmp" 
+Creating temporary file "C:\tmp\RSP11C.tmp" with contents
+[
+/nologo /ML /W3 /GX /Ox /Og /Os /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/TheLibrary.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\usr\src\Win32\TheLibrary\Src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSP11C.tmp" 
+Creating temporary file "C:\tmp\RSP11D.tmp" with contents
+[
+/nologo /out:"..\Lib\TheLibrary.lib" 
+.\Release\Compress.obj
+.\Release\File.obj
+.\Release\StdAfx.obj
+.\Release\SWCommandLine.obj
+.\Release\swDirectory.obj
+.\Release\swINIworks.obj
+.\Release\SWPtrArray.obj
+.\Release\swStreamOnFile.obj
+.\Release\swStreamOnHeap.obj
+.\Release\TheLibrary.obj
+.\Release\UniversalText.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSP11D.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Compress.cpp
+File.cpp
+SWCommandLine.cpp
+swDirectory.cpp
+swINIworks.cpp
+SWPtrArray.cpp
+swStreamOnFile.cpp
+swStreamOnHeap.cpp
+TheLibrary.cpp
+UniversalText.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+TheLibrary.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TheLibrary - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSP120.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/TheLibrary.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\usr\src\Win32\TheLibrary\Src\Compress.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\File.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\SWCommandLine.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swDirectory.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swINIworks.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\SWPtrArray.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swStreamOnFile.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\swStreamOnHeap.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\TheLibrary.cpp"
+"C:\usr\src\Win32\TheLibrary\Src\UniversalText.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSP120.tmp" 
+Creating temporary file "C:\tmp\RSP121.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/TheLibrary.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\usr\src\Win32\TheLibrary\Src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSP121.tmp" 
+Creating temporary file "C:\tmp\RSP122.tmp" with contents
+[
+/nologo /out:"..\Lib\TheLibrary_D.lib" 
+.\Debug\Compress.obj
+.\Debug\File.obj
+.\Debug\StdAfx.obj
+.\Debug\SWCommandLine.obj
+.\Debug\swDirectory.obj
+.\Debug\swINIworks.obj
+.\Debug\SWPtrArray.obj
+.\Debug\swStreamOnFile.obj
+.\Debug\swStreamOnHeap.obj
+.\Debug\TheLibrary.obj
+.\Debug\UniversalText.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSP122.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Compress.cpp
+File.cpp
+SWCommandLine.cpp
+swDirectory.cpp
+swINIworks.cpp
+SWPtrArray.cpp
+swStreamOnFile.cpp
+swStreamOnHeap.cpp
+TheLibrary.cpp
+UniversalText.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+TheLibrary_D.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

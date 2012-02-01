@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Generated Dependency File, included by LibraryTest.mak
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\developing programs\platform sdk\include\basetsd.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\guiddef.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\propidl.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\reason.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\stralign.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\tvout.h"\
+	"..\..\..\..\..\developing programs\platform sdk\include\winefs.h"\
+	"..\..\Include\Compress.h"\
+	"..\..\Include\File.h"\
+	"..\..\Include\Macros.h"\
+	"..\..\Include\SWFileBasedStream.h"\
+	"..\..\Include\SWPtrArray.h"\
+	"..\..\Include\TheLibrary.h"\
+	"..\..\Include\UniversalText.h"\
+	".\StdAfx.h"\
+	
+
+.\SWDiskFileStream.cpp : \
+	".\SWDiskFileStream.h"\
+	
