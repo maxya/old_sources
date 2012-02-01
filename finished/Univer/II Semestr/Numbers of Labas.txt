@@ -1,0 +1,5 @@
+Laba I: 23, 55, 89
+Laba II: 39, 70, 91
+Laba III: 5, 62
+Laba IV: 22
+Laba V: 4,46

@@ -1,0 +1,40 @@
+PROGRAM LABA_3_63;
+USES WINCRT,STRINGS;
+CONST
+     Num: integer=0;
+     y: integer=1;
+     y2: integer=1;
+VAR
+   pos:integer;
+   i:integer;
+   ryad1:string[80];
+   ryad2:string[80];
+BEGIN
+    StrCopy(WindowTitle,'Лабораторная Работа № 3.63 - Выполнил Горбанёв Максим ');
+    repeat
+      GotoXY(4,y);
+      Write('Cимвол',y,': ');
+      ryad1[y]:=ReadKey;
+      Write(ryad1[y]);
+      Inc(y);
+    until (y=80) or (ryad1[y-1]=#13);
+    y2:=y-1;
+    y:=1;
+    repeat
+      GotoXY(20,y);
+      Write('Символ',y,': ');
+      ryad2[y]:=ReadKey;
+      Write(ryad2[y]);
+      Inc(y);
+    until (y=y2);
+    pos:=y+2;
+    GotoXY(3,pos);
+    Write('Сумма Рядков:');
+    for i:=1 to y-1 do
+        begin
+             Num:=(Ord(ryad1[i])+Ord(ryad2[i])) mod 255;
+             Inc(pos);
+             GotoXY(4,pos);
+             WriteLn(i,':  ',Num);
+        end;
+END.
