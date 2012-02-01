@@ -1,0 +1,146 @@
+namespace TestProgect
+{
+	using System;
+	using System.Windows.Forms;	
+	using System.Drawing;
+	using System.Drawing.Printing;// для работы с принтером
+	using System.IO;// для работы с файлами
+	using System.Net; // для работы с сетью
+	
+	class MainForm : Form
+	{	
+		private Label		lb;
+		private ListBox		list;
+		//MAIN - че не ясно, б%я !
+		static void Main(string[] args)
+		{	
+			Application.Run(new MainForm());			
+		}
+		protected override void OnPaint(PaintEventArgs pe)
+		{
+			Graphics g = pe.Graphics;
+			Pen		myPen	= new Pen(Color.Red,1);
+			g.DrawLine(myPen,100,100,400,400);
+		}
+		
+		public MainForm()
+		{
+			this.Text		= "Test Progect";
+			this.Height		= 600;
+			this.Width		= 800;
+			
+			//Icon Creating
+			//Icon icon = new Icon("D:\\net_step\\3\\3\\LiveMail.ico");
+			//this.Icon = icon;
+
+			//Menu Creating...
+			MainMenu menu = new MainMenu();
+			this.Menu = menu;
+			MenuItem  MenuFile = new MenuItem("File");
+			//MenuFile.MenuItems.Add("New", new System.EventHandler(this.MenuOpen_Click));
+			MenuItem MenuNew = new MenuItem("New", new System.EventHandler(this.MenuNew_Click));			
+			MenuFile.MenuItems.Add(MenuNew);			
+			MenuItem MenuSave = new MenuItem("Save", new System.EventHandler(this.MenuSave_Click));
+			MenuFile.MenuItems.Add(MenuSave);
+			MenuItem MenuOpen = new MenuItem("Open", new System.EventHandler(this.MenuOpen_Click));
+			MenuFile.MenuItems.Add(MenuOpen);
+			MenuFile.MenuItems.Add("Print",new System.EventHandler(this.Print));
+			MenuItem MenuExit = new MenuItem("Exit", new System.EventHandler(this.MenuExit_Click));
+			MenuFile.MenuItems.Add(MenuExit);
+			menu.MenuItems.Add(MenuFile);
+
+			//Tool Bar
+			ToolBar toolBar = new ToolBar();
+			ToolBarButton toolBarButton = new ToolBarButton();
+			toolBarButton.Text = "Press Me";
+			toolBar.Buttons.Add(toolBarButton);
+			this.Controls.Add(toolBar);
+
+			//Host name
+			string strHostName = Dns.GetHostName();			
+			
+			//Add Status Bar
+			StatusBar sbar = new StatusBar();
+			sbar.Text = "Hi, I'm Status Bar";
+			//sbar.Text	= strHostName;
+			sbar.ShowPanels = true;
+			StatusBarPanel Spanel = new StatusBarPanel();
+			Spanel.Text = "Panel 1";
+			sbar.Panels.Add(Spanel);			
+			this.Controls.Add(sbar);
+			
+			//Adding Label
+			lb = new Label();
+			lb.Location = new Point(5,65);
+			lb.Size = new Size(200,200);
+			lb.BackColor = Color.Black;
+			this.Controls.Add(lb);
+
+			//Adding List Box
+			list = new ListBox();
+			list.Location = new Point(400,40);
+			list.Size = new Size(200,200);			
+			this.Controls.Add(list);
+			list.Items.Add("hello - item");
+			list.Items.Add("Item #2 - item");
+
+			//Addint Catalog
+			DirectoryInfo fds = new DirectoryInfo("C:\\");
+			DirectoryInfo[] dirs = fds.GetDirectories();
+			foreach(DirectoryInfo dir in dirs)
+			{list.Items.Add(dir);
+			}
+			FileInfo[] files	= fds.GetFiles();
+			foreach(FileInfo file in files)
+			{
+				list.Items.Add(file);
+			}
+		}
+		private void MenuNew_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("New !", "Info");
+		}
+		private void MenuSave_Click(object sender, EventArgs e)
+		{
+			FileStream fs = new FileStream("d:\\test.txt",FileMode.OpenOrCreate,FileAccess.Write);
+			StreamWriter w = new StreamWriter(fs);
+			w.Write("Test Write");
+			w.Flush();
+			w.Close();
+		}
+		private void MenuOpen_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog fd = new OpenFileDialog();
+			fd.Title		="Open File";
+			fd.Filter		="All Files (*.*) |*.*|All Files(*.*)|*.*";
+			if(fd.ShowDialog()== DialogResult.OK)
+			{
+				lb.Image = Image.FromFile(fd.FileName);
+			}
+
+		}
+		private void Print(object sender, EventArgs e)
+		{
+			PrintDocument		pd		= new PrintDocument();
+			PrintDialog			dlg		= new PrintDialog();
+			dlg.Document		= pd;
+			dlg.ShowDialog();
+		}
+		private void MenuExit_Click(object sender, EventArgs e)
+		{Application.Exit();}
+		
+		protected override void OnMouseDown(MouseEventArgs e)
+		{
+			this.Width		= 640;
+			this.Height		= 480;
+			this.Location	=  new Point(0,0);
+			//MessageBox.Show("You Clicked On Form","Notice");
+		}
+		protected override void OnMouseUp(MouseEventArgs e)
+		{
+			this.Width		=240;
+			this.Height		=320;
+		}
+		
+	}	
+}

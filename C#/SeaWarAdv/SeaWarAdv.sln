@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaWarAdv", "SeaWarAdv.csproj", "{84ACBECB-776F-41AD-9DD9-0EC2F34D601D}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{84ACBECB-776F-41AD-9DD9-0EC2F34D601D}.Debug.ActiveCfg = Debug|.NET
+		{84ACBECB-776F-41AD-9DD9-0EC2F34D601D}.Debug.Build.0 = Debug|.NET
+		{84ACBECB-776F-41AD-9DD9-0EC2F34D601D}.Release.ActiveCfg = Release|.NET
+		{84ACBECB-776F-41AD-9DD9-0EC2F34D601D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
