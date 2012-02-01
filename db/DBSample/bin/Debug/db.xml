@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSet1 xmlns="http://www.tempuri.org/DataSet1.xsd">
+  <table1>
+    <age>123</age>
+    <key>1</key>
+    <lastname>First name</lastname>
+    <name>name1</name>
+  </table1>
+  <table1>
+    <age>0</age>
+    <key>2</key>
+    <lastname>sname</lastname>
+    <name>shurik</name>
+  </table1>
+  <table1>
+    <age>23</age>
+    <key>3</key>
+    <lastname>pacovatiy</lastname>
+    <name>pacik</name>
+  </table1>
+  <table1>
+    <age>12</age>
+    <key>4</key>
+    <lastname>zhopistiy</lastname>
+    <name>zhop</name>
+  </table1>
+  <table1>
+    <age>321</age>
+    <key>5</key>
+    <lastname>percoviy</lastname>
+    <name>perec</name>
+  </table1>
+</DataSet1>
